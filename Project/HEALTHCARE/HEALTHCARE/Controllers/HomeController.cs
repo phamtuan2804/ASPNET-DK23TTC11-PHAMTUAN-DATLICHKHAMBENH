@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using HEALTHCARE.Models;
+using HEALTHCARE.Models; // C?n thi?t n?u ErrorViewModel n?m ? ?ây
 using Microsoft.AspNetCore.Mvc;
 
 namespace HEALTHCARE.Controllers
@@ -13,6 +13,8 @@ namespace HEALTHCARE.Controllers
             _logger = logger;
         }
 
+        // Action Index này ch? tr? v? View, không kèm theo Model ph?c t?p nào.
+        // ?i?u này là ?ÚNG cho m?t trang ch? thông th??ng.
         public IActionResult Index()
         {
             return View();

@@ -3,24 +3,92 @@
   "WorkspaceRootPath": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\datlich\\taomoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\datlich\\taomoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\views\\datlich\\thongbaoketnoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\views\\datlich\\thongbaoketnoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\lichtrinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\lichtrinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\lichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\lichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\datlichkhamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\datlichkhamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\models\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\models\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\data\\healthcaredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\data\\healthcaredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\controllers\\datlichcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\controllers\\datlichcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|e:\\03 tvu_onschool\\tvu_onschool\\asp.net\\project\\healthcare\\healthcare\\healthcare.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{01F11784-C056-4E31-973B-4D391C017706}|HEALTHCARE\\HEALTHCARE.csproj|solutionrelative:healthcare\\healthcare.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,32 +98,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T10:14:36.294Z",
+              "WhenOpened": "2025-05-07T16:17:41.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "HEALTHCARE\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T09:53:43.528Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\appsettings.json",
+              "RelativeDocumentMoniker": "HEALTHCARE\\appsettings.json",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\appsettings.json",
+              "RelativeToolTip": "HEALTHCARE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-07T06:36:51.23Z",
               "EditorCaption": ""
             },
             {
@@ -66,20 +134,46 @@
               "RelativeDocumentMoniker": "HEALTHCARE\\Program.cs",
               "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Program.cs",
               "RelativeToolTip": "HEALTHCARE\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T09:51:15.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T16:17:39.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaoMoi.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\DatLich\\TaoMoi.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\DatLich\\TaoMoi.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\DatLich\\TaoMoi.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\DatLich\\TaoMoi.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T10:22:01.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "style.css",
               "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "HEALTHCARE\\wwwroot\\css\\style.css",
               "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\css\\style.css",
               "RelativeToolTip": "HEALTHCARE\\wwwroot\\css\\style.css",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAG4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMcBAAAAAAAAAAAuwAoCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-05-05T09:25:15.383Z",
               "EditorCaption": ""
@@ -87,14 +181,209 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T16:17:43.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NguoiDung.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\NguoiDung.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\NguoiDung.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\NguoiDung.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\NguoiDung.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:57:23.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T09:53:43.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThongBaoKetNoi.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\DatLich\\ThongBaoKetNoi.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\DatLich\\ThongBaoKetNoi.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\DatLich\\ThongBaoKetNoi.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\DatLich\\ThongBaoKetNoi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T06:57:09.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HEALTHCARE\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T10:14:36.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LichTrinh.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\LichTrinh.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\LichTrinh.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\LichTrinh.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\LichTrinh.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAywCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:56:44.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LichHen.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\LichHen.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\LichHen.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\LichHen.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\LichHen.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAywCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:57:03.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:04:53.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DichVu.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\DichVu.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\DichVu.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\DichVu.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\DichVu.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:56:23.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DatLichKhamViewModel.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\DatLichKhamViewModel.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\DatLichKhamViewModel.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\DatLichKhamViewModel.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\DatLichKhamViewModel.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:33:40.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BacSi.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\BacSi.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Models\\BacSi.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Models\\BacSi.cs",
+              "RelativeToolTip": "HEALTHCARE\\Models\\BacSi.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:55:47.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HealthCareDbContext.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Data\\HealthCareDbContext.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Data\\HealthCareDbContext.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Data\\HealthCareDbContext.cs",
+              "RelativeToolTip": "HEALTHCARE\\Data\\HealthCareDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:50:53.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "HEALTHCARE\\Controllers\\HomeController.cs",
               "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Controllers\\HomeController.cs",
               "RelativeToolTip": "HEALTHCARE\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T07:44:06.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DatLichController.cs",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Controllers\\DatLichController.cs",
+              "RelativeDocumentMoniker": "HEALTHCARE\\Controllers\\DatLichController.cs",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\Controllers\\DatLichController.cs",
+              "RelativeToolTip": "HEALTHCARE\\Controllers\\DatLichController.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAIwAYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:19:25.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "site.js",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "HEALTHCARE\\wwwroot\\js\\site.js",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "HEALTHCARE\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-07T16:01:56.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HEALTHCARE",
+              "DocumentMoniker": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\HEALTHCARE.csproj",
+              "RelativeDocumentMoniker": "HEALTHCARE\\HEALTHCARE.csproj",
+              "ToolTip": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\HEALTHCARE.csproj",
+              "RelativeToolTip": "HEALTHCARE\\HEALTHCARE.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T14:50:22.312Z",
               "EditorCaption": ""
             }
           ]

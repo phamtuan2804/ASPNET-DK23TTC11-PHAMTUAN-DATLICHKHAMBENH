@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Kết Quả Kiểm Tra Kết Nối Database";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <p>@ViewBag.Message</p>
+</div>
+
+@if (ViewBag.Message != null && ViewBag.Message.StartsWith("LỖI"))
+{
+    <p><strong>Gợi ý:</strong></p>
+    <ul>
+        <li>Kiểm tra kỹ chuỗi kết nối trong file <code>appsettings.json</code> (tên server, tên database, user/password nếu dùng SQL Authentication).</li>
+        <li>Đảm bảo SQL Server đang chạy và cho phép kết nối từ xa (nếu cần).</li>
+        <li>Kiểm tra tường lửa có chặn kết nối đến SQL Server không.</li>
+        <li>Xem cửa sổ Output (Output window) trong Visual Studio hoặc Console log để có thêm chi tiết lỗi nếu có.</li>
+    </ul>
+}

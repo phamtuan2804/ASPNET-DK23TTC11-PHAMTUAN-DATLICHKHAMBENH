@@ -1,4 +1,4 @@
-/* --- Reset & Basic Styles --- */
+/* --- Reset & C? b?n --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,14 +6,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Thay b?ng font c?a b?n */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa; /* Màu n?n xám r?t nh?t */
+    background-color: #f8f9fa;
 }
 
 .container {
-    max-width: 1140px; /* Gi?i h?n chi?u r?ng n?i dung */
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -43,14 +43,14 @@ img {
     z-index: 1000;
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 .logo img {
-    max-height: 45px; /* ?i?u ch?nh chi?u cao logo */
+    max-height: 45px;
     width: auto;
 }
 
@@ -59,255 +59,300 @@ img {
 }
 
 .main-nav li {
-    margin-left: 30px; /* T?ng kho?ng cách menu items */
+    margin-left: 30px;
 }
 
 .main-nav a {
-    padding: 5px 0; /* B? padding ngang, dùng margin c?a li */
+    padding: 5px 0;
     color: #555;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
 }
-/* Hi?u ?ng g?ch chân khi hover/active */
-.main-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #6a1b9a; /* Màu tím ??m h?n */
-    transition: width 0.3s ease;
-}
 
-.main-nav a:hover,
-.main-nav a.active {
-    color: #6a1b9a;
-}
+    .main-nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #6a1b9a;
+        transition: width 0.3s ease;
+    }
 
-.main-nav a:hover::after,
-.main-nav a.active::after {
-     width: 100%;
-}
+    .main-nav a:hover,
+    .main-nav a.active {
+        color: #6a1b9a;
+    }
 
-.cta-button {
-    padding: 10px 25px; /* T?ng padding nút */
+        .main-nav a:hover::after,
+        .main-nav a.active::after {
+            width: 100%;
+        }
+
+.cta-button { /* Ki?u nút chung */
+    padding: 10px 25px;
     border: none;
-    border-radius: 6px; /* Bo góc nh? */
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     font-size: 0.95em;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.cta-button:hover {
-    transform: translateY(-2px); /* Hi?u ?ng nh?c lên nh? */
-}
 
-.header-cta {
-    background-color: #8E44AD; /* Màu tím t? ?nh */
+    .cta-button:hover {
+        transform: translateY(-2px);
+    }
+
+.header-cta { /* Nút CTA Header */
+    background-color: #8E44AD;
     color: #fff;
     box-shadow: 0 2px 5px rgba(142, 68, 173, 0.4);
 }
 
-.header-cta:hover {
-    background-color: #7D3C98; /* Tím ??m h?n */
-}
+    .header-cta:hover {
+        background-color: #7D3C98;
+    }
 
-.mobile-menu-toggle {
+.mobile-menu-toggle { /* Nút menu mobile */
     display: none;
     background: none;
     border: none;
-    font-size: 1.8em; /* Gi?m kích th??c icon */
+    font-size: 1.8em;
     color: #333;
     cursor: pointer;
 }
 
-
-/* --- Hero Section --- */
+/* --- Hero Section (Banner) --- */
 .hero-section {
-    padding: 60px 0; /* T?ng kho?ng cách trên d??i */
-    background-color: #fff; /* N?n tr?ng cho section */
+    padding: 60px 0;
+    background-color: #fff;
 }
 
-/* Ch? áp d?ng cho slide active n?u làm slideshow */
 .slide-wrapper.active .slide-content {
     display: flex;
-    align-items: flex-start; /* Canh l? trên */
-    gap: 40px; /* Kho?ng cách gi?a c?t text và ?nh */
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .hero-text {
-    flex: 1 1 55%; /* C?t text r?ng h?n m?t chút */
-    padding-right: 20px; /* Thêm kho?ng cách ph?i */
+    flex: 1 1 55%;
+    padding-right: 20px;
 }
 
-.hero-text .sub-heading {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 2px;
-}
-.hero-text .brand-name {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-.hero-text .brand-name .highlight {
-    color: #E74C3C; /* Màu cam/?? cho HealthCare */
-    font-weight: bold;
-}
+    .hero-text .sub-heading {
+        font-size: 0.9em;
+        color: #777;
+        margin-bottom: 2px;
+    }
 
-.hero-text h1 {
-    font-size: 2.6em; /* Kích th??c heading chính */
-    color: #3A1C71; /* Màu tím/xanh ??m */
-    margin-bottom: 10px;
-    font-weight: bold; /* ??m h?n */
-    line-height: 1.2;
-}
-.hero-text h2 {
-    font-size: 1.5em; /* Kích th??c subheading */
-    color: #444;
-    margin-bottom: 30px;
-    font-weight: normal;
-    line-height: 1.4;
-}
+    .hero-text .brand-name {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+        .hero-text .brand-name .highlight {
+            color: #E74C3C;
+            font-weight: bold;
+        }
+
+    .hero-text h1 {
+        font-size: 2.6em;
+        color: #3A1C71;
+        margin-bottom: 10px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+        color: #444;
+        margin-bottom: 30px;
+        font-weight: normal;
+        line-height: 1.4;
+    }
 
 .benefits-list {
     padding-left: 0;
 }
 
-.benefits-list li {
-    margin-bottom: 18px; /* T?ng kho?ng cách list items */
-    padding-left: 35px; /* Kho?ng tr?ng cho icon */
-    position: relative;
-    font-size: 1em; /* Kích th??c ch? list items */
-    color: #555;
-}
+    .benefits-list li {
+        margin-bottom: 18px;
+        padding-left: 35px;
+        position: relative;
+        font-size: 1em;
+        color: #555;
+    }
 
-/* Icon tròn màu tím v?i d?u check */
-.benefits-list li::before {
-    content: '?'; /* D?u check ??n gi?n */
-    /* content: '\f00c'; */ /* N?u dùng Font Awesome */
-    /* font-family: 'Font Awesome 6 Free'; */ /* N?u dùng Font Awesome */
-    /* font-weight: 900; */ /* N?u dùng Font Awesome */
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #fff; /* Màu d?u check */
-    background-color: #8E44AD; /* N?n tím cho icon */
-    width: 24px; /* Kích th??c icon */
-    height: 24px;
-    border-radius: 50%; /* Bo tròn */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8em; /* Kích th??c d?u check */
-    font-weight: bold;
-}
+        .benefits-list li::before { /* Icon ??u dòng */
+            content: '?'; /* ??i thành d?u check */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #fff;
+            background-color: #8E44AD;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
 
-.hero-images {
-    flex: 1 1 45%; /* C?t ?nh */
+.hero-images { /* Grid ?nh */
+    flex: 1 1 45%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 c?t b?ng nhau ban ??u */
-    grid-template-rows: auto auto; /* 2 hàng t? ??ng chi?u cao */
-    gap: 15px; /* Kho?ng cách gi?a các ?nh */
-    /* ??nh ngh?a khu v?c cho t?ng ?nh */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
     grid-template-areas:
         "img-1 img-2"
-        "img-3 img-2"; /* img-2 chi?m 2 hàng */
-        /* Ho?c b? c?c khác tùy ?nh: */
-        /* grid-template-areas:
-            "img-1 img-2"
-            "img-1 img-4"; */
-            /* "img-3 img-4"; */
+        "img-3 img-4";
 }
 
-.hero-images img {
-    border-radius: 12px; /* Bo góc ?nh nhi?u h?n */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ?? bóng nh? */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ??m b?o ?nh che ph? grid area */
-}
-/* Gán ?nh vào khu v?c grid */
-.img-1 { grid-area: img-1; }
-.img-2 { grid-area: img-2; }
-.img-3 { grid-area: img-3; }
-.img-4 { grid-area: img-4; } /* ?nh này không ???c s? d?ng trong grid-area ví d? trên */
+    .hero-images img {
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-/* ?i?u ch?nh grid-template-areas ?? kh?p nh?t v?i layout trong ?nh */
-/* Layout gi?ng ?nh nh?t có th? (img-1, img-3 bên trái; img-2, img-4 bên ph?i) */
-.hero-images {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto); /* Hai hàng */
-    grid-template-areas:
-        "img-1 img-2" /* Hàng 1: ?nh 1 bên trái, ?nh 2 bên ph?i */
-        "img-3 img-4"; /* Hàng 2: ?nh 3 bên trái, ?nh 4 bên ph?i */
-    /* ?? ?nh 2 và 4 cao h?n 1 và 3, c?n ?i?u ch?nh grid-template-rows ho?c kích th??c ?nh g?c */
-    /* Ho?c dùng cách khác nh? absolute positioning n?u c?n chính xác pixel */
+.img-1 {
+    grid-area: img-1;
 }
 
+.img-2 {
+    grid-area: img-2;
+}
 
-/* --- Registration Form Section --- */
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+/* --- Form ??t L?ch --- */
 .registration-form-section {
-    background-color: #8E44AD; /* Màu n?n tím */
-    padding: 60px 0; /* T?ng padding */
+    background-color: #8E44AD;
+    padding: 50px 0;
     color: #fff;
-    /* border-radius: 20px 20px 0 0; */ /* Bo góc trên n?u mu?n */
-    /* margin: 40px auto 0; */ /* Kho?ng cách trên */
-    /* max-width: 1140px; */ /* Gi? trong container */
 }
 
-.registration-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 c?t b?ng nhau */
-    gap: 20px 30px; /* Kho?ng cách d?c và ngang */
-    align-items: center; /* Canh gi?a các item theo chi?u d?c */
-    max-width: 800px; /* Gi?i h?n chi?u r?ng form */
-    margin: 0 auto; /* C?n gi?a form trong section */
+    .registration-form-section h2 { /* Tiêu ?? form */
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2em;
+        color: #fff;
+    }
+
+.registration-form { /* Th? form */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.form-input {
-    background-color: #fff; /* N?n tr?ng */
-    border: none; /* Không vi?n */
-    border-radius: 6px; /* Bo góc nh? */
-    padding: 15px; /* Padding input */
-    font-size: 1em;
-    color: #333;
-    width: 100%; /* Chi?m h?t chi?u r?ng grid cell */
+    .registration-form .form-row { /* Hàng trong form */
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .registration-form .form-group { /* Nhóm label/input */
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px; /* Thêm l?i margin n?u c?n kho?ng cách khi x?p d?c */
+    }
+
+    .registration-form label.control-label { /* Nhãn input */
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 0.9em;
+        color: #f0f0f0;
+    }
+
+    .registration-form .form-input,
+    .registration-form select.form-input { /* Ki?u Input & Select */
+        padding: 12px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #fff;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box; /* ?ã có ? reset (*) */
+    }
+
+        .registration-form .form-input::placeholder {
+            color: #999;
+        }
+
+    .registration-form select.form-input { /* Ki?u Select riêng */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.6-3.6%205.4-7.8%205.4-12.8%200-5-1.8-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 0.65em auto, 100%;
+        padding-right: 2.5em;
+    }
+
+    .registration-form .text-danger { /* Thông báo l?i validation */
+        color: #ffdddd;
+        font-size: 0.85em;
+        margin-top: 4px;
+    }
+
+    .registration-form .form-submit { /* C?n ch?nh nút Submit */
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .registration-form .form-submit-button { /* Nút Submit */
+        background-color: #F1C40F;
+        color: #333;
+        padding: 12px 30px;
+        font-size: 1.1em;
+        box-shadow: 0 2px 5px rgba(241, 196, 15, 0.4);
+        /* Thu?c tính khác k? th?a t? .cta-button */
+    }
+
+        .registration-form .form-submit-button:hover {
+            background-color: #D4AC0D;
+        }
+
+/* Ki?u thông báo thành công (TempData) */
+.alert.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
 }
 
-.form-input::placeholder {
-    color: #999;
-}
-
-.form-submit-button {
-    background-color: #F1C40F; /* Màu vàng kem */
-    color: #333; /* Ch? ??m */
-    padding: 15px 30px;
-    font-size: 1.05em;
-    grid-column: 2 / 3; /* ??t nút ? c?t th? 2 */
-    justify-self: end; /* ??y nút v? cu?i bên ph?i c?a c?t */
-    box-shadow: 0 2px 5px rgba(241, 196, 15, 0.4);
-}
-
-.form-submit-button:hover {
-    background-color: #D4AC0D; /* Vàng ??m h?n */
-}
-
-/* --- About Section --- */
+/* --- Ph?n Gi?i Thi?u --- */
 .about-section {
     padding: 60px 0;
     background-color: #fff;
 }
-.about-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #8E44AD; /* Màu tím */
-    font-size: 2em;
-}
 
+    .about-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #8E44AD;
+        font-size: 2em;
+    }
 
 /* --- Footer --- */
 .footer {
@@ -319,90 +364,159 @@ img {
     font-size: 0.9em;
 }
 
-
 /* --- Responsive --- */
 @media (max-width: 992px) {
     .hero-section .slide-content {
-        flex-direction: column; /* Ch?ng c?t text và ?nh */
-        align-items: center; /* C?n gi?a */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
+
     .hero-text {
-        padding-right: 0; /* B? padding ph?i */
-        margin-bottom: 40px; /* Kho?ng cách d??i text */
-        flex-basis: auto; /* Reset flex-basis */
-        order: 2; /* ??y text xu?ng d??i ?nh */
-        max-width: 600px; /* Gi?i h?n chi?u r?ng text */
+        padding-right: 0;
+        margin-bottom: 40px;
+        flex-basis: auto;
+        order: 2;
+        max-width: 600px;
     }
+
     .hero-images {
-        flex-basis: auto; /* Reset flex-basis */
-        order: 1; /* ??y ?nh lên trên */
-        width: 100%; /* Chi?m h?t chi?u r?ng */
-        max-width: 650px; /* Gi?i h?n chi?u r?ng kh?i ?nh */
-        /* Gi? nguyên grid ho?c ??i sang flex ??n gi?n h?n */
+        flex-basis: auto;
+        order: 1;
+        width: 100%;
+        max-width: 650px;
     }
+
     .benefits-list {
-        display: inline-block; /* Giúp c?n gi?a list */
-        text-align: left; /* C?n trái text trong list */
+        display: inline-block;
+        text-align: left;
     }
-     .benefits-list li { padding-left: 30px; }
-    .benefits-list li::before { width: 20px; height: 20px; font-size: 0.7em; }
 
-     .registration-form {
-        max-width: 600px; /* Gi?m chi?u r?ng form */
-     }
-}
+        .benefits-list li {
+            padding-left: 30px;
+        }
 
-
-@media (max-width: 768px) {
-    /* Header mobile styles (nh? tr??c) */
-    .header .container { flex-wrap: wrap; position: relative; }
-    .main-nav { display: none; width: 100%; order: 3; background-color: #fff; margin-top: 10px; }
-    .main-nav.active { display: block; }
-    .main-nav ul { flex-direction: column; align-items: center; }
-    .main-nav li { margin: 10px 0; }
-    .mobile-menu-toggle { display: block; order: 2; }
-    .header-cta { order: 1; margin-left: auto; }
-
-    .hero-text h1 { font-size: 2em; }
-    .hero-text h2 { font-size: 1.3em; }
-
-    /* Thay ??i grid ?nh trên mobile n?u c?n */
-    .hero-images {
-         grid-template-columns: 1fr 1fr; /* Có th? gi? 2 c?t */
-         grid-template-areas: /* Ho?c x?p ch?ng */
-            "img-1 img-2"
-            "img-3 img-4";
-          gap: 10px;
-          max-width: 500px;
-    }
+            .benefits-list li::before {
+                width: 20px;
+                height: 20px;
+                font-size: 0.7em;
+            }
 
     .registration-form {
-        grid-template-columns: 1fr; /* 1 c?t duy nh?t */
-        gap: 15px; /* Gi?m kho?ng cách d?c */
-        max-width: 90%; /* Form chi?m nhi?u chi?u r?ng h?n */
+        max-width: 600px;
     }
-    .form-submit-button {
-        grid-column: 1 / 2; /* Chi?m h?t c?t */
-        justify-self: center; /* C?n gi?a nút */
-        width: 80%; /* Nút r?ng h?n */
+}
+
+@media (max-width: 768px) {
+    /* Header mobile */
+    .header .container {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        background-color: #fff;
         margin-top: 10px;
     }
 
+        .main-nav.active {
+            display: block;
+        }
+
+        .main-nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-nav li {
+            margin: 10px 0;
+        }
+
+    .mobile-menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .header-cta {
+        order: 1;
+        margin-left: auto;
+    }
+
+    /* Hero mobile */
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text h2 {
+        font-size: 1.3em;
+    }
+
+    .hero-images {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img-1 img-2"
+            "img-3 img-4";
+        gap: 10px;
+        max-width: 500px;
+    }
+
+    /* Form mobile */
+    .registration-form .form-row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0; /* Reset margin khi group x?p d?c */
+    }
+
+    .registration-form .form-group {
+        /* ?ã có margin-bottom: 15px; gi? nguyên ho?c ?i?u ch?nh n?u c?n */
+        margin-bottom: 20px; /* Gi? nh? c? n?u ?n */
+    }
+
+    .registration-form .form-submit {
+        justify-content: center;
+    }
+
+    .registration-form .form-submit-button {
+        width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .registration-form {
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
-     .hero-text h1 { font-size: 1.8em; }
-     .hero-text h2 { font-size: 1.1em; }
-     .hero-images {
-         grid-template-columns: 1fr; /* 1 c?t ?nh duy nh?t */
-         grid-template-areas: /* X?p ch?ng t?t c? */
+    /* Hero nh? nh?t */
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1em;
+    }
+
+    .hero-images {
+        grid-template-columns: 1fr;
+        grid-template-areas:
             "img-1"
             "img-2"
             "img-3"
             "img-4";
-         max-width: 300px; /* Gi?i h?n chi?u r?ng ?nh nh? */
-     }
-     .cta-button { padding: 12px 20px; font-size: 0.9em;}
-     .form-submit-button { padding: 12px 25px; width: 90%;}
+        max-width: 300px;
+    }
+    /* Nút nh? nh?t */
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+
+    .registration-form .form-submit-button {
+        padding: 12px 25px;
+        width: auto;
+    }
 }

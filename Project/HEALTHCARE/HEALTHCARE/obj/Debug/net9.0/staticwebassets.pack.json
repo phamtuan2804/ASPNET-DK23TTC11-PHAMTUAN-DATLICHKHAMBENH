@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\image\\anh-suc-khoe-1.png",
-      "PackagePath": "staticwebassets\\image\\anh-suc-khoe-1.png"
+      "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\images\\kham-suc-khoe-1.jpg",
+      "PackagePath": "staticwebassets\\images\\kham-suc-khoe-1.jpg"
+    },
+    {
+      "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\images\\kham-suc-khoe-2.jpg",
+      "PackagePath": "staticwebassets\\images\\kham-suc-khoe-2.jpg"
+    },
+    {
+      "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\images\\kham-suc-khoe-3.jpg",
+      "PackagePath": "staticwebassets\\images\\kham-suc-khoe-3.jpg"
+    },
+    {
+      "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\images\\kham-suc-khoe-4.jpg",
+      "PackagePath": "staticwebassets\\images\\kham-suc-khoe-4.jpg"
     },
     {
       "Id": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\js\\site.js",

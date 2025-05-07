@@ -1,0 +1,276 @@
+﻿@model DatLichKhamViewModel
+@{
+    ViewData["Title"] = "Đặt Lịch Khám Bệnh Ngoài Giờ";
+    // Layout = "_YourMainLayout";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="@Url.Action("Index", "Home")" class="logo">
+                <img src="https://placehold.co/150x50/8A2BE2/white?text=HealthCare+Logo" alt="Logo HealthCare">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")#home" class="active">Trang chủ</a></li>
+                    <li><a href="@Url.Action("Index", "Home")#about">Giới thiệu</a></li>
+                    <li><a href="@Url.Action("TaoMoi", "DatLich")">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button header-cta" onclick="location.href='@Url.Action("TaoMoi", "DatLich")'">Liên hệ tư vấn ngay</button>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="slide-wrapper active">
+                <div class="container slide-content">
+                    <div class="hero-text">
+                        <p class="sub-heading">Theo tiêu chuẩn</p>
+                        <p class="brand-name">Tập đoàn Y Khoa <span class="highlight">HealthCare</span></p>
+                        <h1>KHÁM SỨC KHỎE ĐỊNH KỲ</h1>
+                        <h2>Hãy chăm sóc sức khỏe của bạn mỗi ngày</h2>
+                        <ul class="benefits-list">
+                            <li>Tận tình tư vấn, giải đáp mọi thắc mắc của khách hàng</li>
+                            <li>Nhiệt tình, tận tâm thăm khám, chăm sóc khách hàng như chính người thân</li>
+                            <li>Lấy sức khỏe khách hàng làm trung tâm, lấy sự hài lòng của khách hàng làm tiêu chuẩn</li>
+                            <li>Hệ thống cơ sở vật chất theo tiêu chuẩn Quốc tế</li>
+                            <li>Đội ngũ nhân viên giàu kinh nghiệm và tận tâm</li>
+                        </ul>
+                    </div>
+                    <div class="hero-images">
+                        <img src="~/images/kham-suc-khoe-1.jpg" alt="Nhân viên y tế" class="img-1">
+                        <img src="~/images/kham-suc-khoe-2.jpg" alt="Máy MRI" class="img-2">
+                        <img src="~/images/kham-suc-khoe-3.jpg" alt="Tư vấn khám bệnh" class="img-3">
+                        <img src="~/images/kham-suc-khoe-4.jpg" alt="Đội ngũ y tế" class="img-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="registration-form-section">
+            <div class="container">
+                <h2>Đặt Lịch Khám Bệnh Ngay Hôm Nay</h2>
+
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                <form asp-controller="DatLich" asp-action="TaoMoi" method="post" class="registration-form">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <h4 class="form-section-title">1. Thông tin cá nhân</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label asp-for="TenBenhNhan" class="control-label"></label>
+                            <input asp-for="TenBenhNhan" class="form-input" placeholder="Nhập họ và tên" />
+                            <span asp-validation-for="TenBenhNhan" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label asp-for="SoDienThoai" class="control-label"></label>
+                            <input asp-for="SoDienThoai" class="form-input" placeholder="Số điện thoại" />
+                            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-input" placeholder="Địa chỉ email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <h4 class="form-section-title">2. Lựa chọn dịch vụ và thời gian</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label asp-for="MaBacSiChon" class="control-label"></label>
+                            <select asp-for="MaBacSiChon" asp-items="Model.DanhSachBacSi" class="form-input" id="ddlBacSi">
+                                <option value="">-- Chọn bác sĩ --</option>
+                            </select>
+                            <span asp-validation-for="MaBacSiChon" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MaDichVuChon" class="control-label"></label>
+                            <select asp-for="MaDichVuChon" asp-items="Model.DanhSachDichVu" class="form-input" id="ddlDichVu">
+                                <option value="">-- Chọn dịch vụ --</option>
+                            </select>
+                            <span asp-validation-for="MaDichVuChon" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label asp-for="NgayKham" class="control-label"></label>
+                            <input asp-for="NgayKham" type="date" class="form-input" id="txtNgayKham" />
+                            <span asp-validation-for="NgayKham" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MaLichTrinhChon" class="control-label"></label>
+                            <select asp-for="MaLichTrinhChon" asp-items="Model.DanhSachKhungGio" class="form-input" id="ddlKhungGio">
+                                <option value="">-- Vui lòng chọn ngày, bác sĩ, dịch vụ --</option>
+                            </select>
+                            <span asp-validation-for="MaLichTrinhChon" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group" style="width:100%;">
+                            <label asp-for="GhiChu" class="control-label"></label>
+                            <textarea asp-for="GhiChu" class="form-input" rows="3" placeholder="Ghi chú thêm nếu có (ví dụ: triệu chứng cụ thể, yêu cầu khác...)"></textarea>
+                            <span asp-validation-for="GhiChu" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div id="divGiaDichVu" class="mt-3 mb-3" style="display:none; padding: 15px; background-color: #f0e6f7; border-radius: 5px; border: 1px solid #d1b3e6;">
+                        <h4 style="color: #6a1b9a; margin-bottom: 10px;">3. Thông tin giá dịch vụ</h4>
+                        <p id="pTenDichVu" style="font-weight:bold; margin-bottom: 5px;"></p>
+                        <p id="pGiaDichVu" style="font-size: 1.3em; color: #E74C3C; font-weight: bold;"></p>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button form-submit-button">ĐẶT LỊCH NGAY</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Giới thiệu về chúng tôi</h2>
+                <p>Nội dung phần giới thiệu...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year. Tên công ty của bạn. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                function taiKhungGio() {
+                    var maBacSi = $('#ddlBacSi').val();
+                    var maDichVu = $('#ddlDichVu').val();
+                    var ngayKham = $('#txtNgayKham').val();
+                    var ddlKhungGio = $('#ddlKhungGio');
+
+                    var defaultOption = '<option value="">-- Vui lòng chọn đủ thông tin --</option>';
+                    if(maBacSi && maDichVu && ngayKham) {
+                        defaultOption = '<option value="">-- Đang tải khung giờ... --</option>';
+                    }
+                    ddlKhungGio.empty().append(defaultOption);
+
+                    if (maBacSi && maDichVu && ngayKham) {
+                        $.ajax({
+                            url: '@Url.Action("GetAvailableSlots", "DatLich")',
+                            type: 'GET',
+                            data: {
+                                maBacSi: maBacSi,
+                                maDichVu: maDichVu,
+                                ngayKham: ngayKham
+                            },
+                            success: function (data) {
+                                ddlKhungGio.empty();
+                                if (data && data.length > 0) {
+                                    ddlKhungGio.append('<option value="">-- Chọn khung giờ (18h-21h) --</option>');
+                                    $.each(data, function (index, item) {
+                                        ddlKhungGio.append($('<option></option>').val(item.value).text(item.text));
+                                    });
+                                } else {
+                                    ddlKhungGio.append('<option value="">-- Không có khung giờ trống --</option>');
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error("Lỗi khi tải khung giờ: ", textStatus, errorThrown, jqXHR.responseText);
+                                ddlKhungGio.empty().append('<option value="">-- Lỗi tải khung giờ --</option>');
+                            }
+                        });
+                    }
+                }
+
+                function taiGiaDichVu() {
+                    var maDichVu = $('#ddlDichVu').val();
+                    var divGia = $('#divGiaDichVu');
+                    var pTenDichVu = $('#pTenDichVu');
+                    var pGiaDichVu = $('#pGiaDichVu');
+
+                    divGia.hide();
+
+                    if (maDichVu) {
+                        $.ajax({
+                            url: '@Url.Action("GetServicePrice", "DatLich")',
+                            type: 'GET',
+                            data: { maDichVu: maDichVu },
+                            success: function (data) {
+                                if (data && data.gia != null) {
+                                    pTenDichVu.text('Dịch vụ: ' + (data.tenDichVu || 'Đã chọn'));
+                                    var formattedPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.gia);
+                                    pGiaDichVu.text('Giá: ' + formattedPrice);
+                                    divGia.show();
+                                } else {
+                                    divGia.hide();
+                                    pGiaDichVu.text('');
+                                    pTenDichVu.text('');
+                                }
+                            },
+                            error: function () {
+                                console.error("Lỗi khi tải giá dịch vụ.");
+                                divGia.hide();
+                                pGiaDichVu.text('');
+                                pTenDichVu.text('');
+                            }
+                        });
+                    }
+                }
+
+                $('#ddlBacSi, #ddlDichVu, #txtNgayKham').change(function () {
+                    taiKhungGio();
+                });
+
+                $('#ddlDichVu').change(function () {
+                    taiGiaDichVu();
+                });
+
+                var tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                var minDate = tomorrow.toISOString().split('T')[0];
+
+                if ($('#txtNgayKham').val() < minDate) {
+                     $('#txtNgayKham').val(minDate);
+                }
+                $('#txtNgayKham').attr('min', minDate);
+
+                if ($('#ddlDichVu').val()) {
+                    taiGiaDichVu();
+                }
+                if ($('#ddlBacSi').val() && $('#ddlDichVu').val() && $('#txtNgayKham').val()){
+                    taiKhungGio();
+                }
+            });
+        </script>
+    }
+</body>
+</html>

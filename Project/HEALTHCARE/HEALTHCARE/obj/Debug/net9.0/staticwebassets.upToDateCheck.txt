@@ -62,7 +62,10 @@ E:\03 TVU_ONSCHOOL\TVU_ONSCHOOL\ASP.NET\Project\HEALTHCARE\HEALTHCARE\wwwroot\li
 E:\03 TVU_ONSCHOOL\TVU_ONSCHOOL\ASP.NET\Project\HEALTHCARE\HEALTHCARE\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
-wwwroot\image\anh-suc-khoe-1.png
+wwwroot\images\kham-suc-khoe-1.jpg
+wwwroot\images\kham-suc-khoe-2.jpg
+wwwroot\images\kham-suc-khoe-3.jpg
+wwwroot\images\kham-suc-khoe-4.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
