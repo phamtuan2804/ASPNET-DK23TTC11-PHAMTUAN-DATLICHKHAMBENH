@@ -7,13 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HEALTHCARE.Models;
-using HEALTHCARE.Data; // Đảm bảo đúng Namespace
+using HEALTHCARE.Data;
 
 public class DatLichController : Controller
 {
     private readonly HealthCareDbContext _context;
     private readonly IConfiguration _configuration;
-    // Lưu ý: Giới hạn số lượt khám/ngày của bác sĩ có thể cần kiểm tra logic phức tạp hơn.
 
     public DatLichController(HealthCareDbContext context, IConfiguration configuration)
     {
@@ -22,11 +21,10 @@ public class DatLichController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> TaoMoi() // Hiển thị form đặt lịch
+    public async Task<IActionResult> TaoMoi()
     {
         var viewModel = new DatLichKhamViewModel();
 
-        // Lấy danh sách bác sĩ và dịch vụ cho dropdowns
         viewModel.DanhSachBacSi = await _context.BacSis
             .OrderBy(bs => bs.TenBacSi)
             .Select(bs => new SelectListItem { Value = bs.MaBacSi.ToString(), Text = bs.TenBacSi })
@@ -37,7 +35,6 @@ public class DatLichController : Controller
             .Select(dv => new SelectListItem { Value = dv.MaDichVu.ToString(), Text = dv.TenDichVu })
             .ToListAsync();
 
-        // Khởi tạo dropdown khung giờ
         viewModel.DanhSachKhungGio = new List<SelectListItem> { new SelectListItem { Value = "", Text = "-- Vui lòng chọn ngày, bác sĩ, dịch vụ --" } };
 
         return View(viewModel);
@@ -45,9 +42,8 @@ public class DatLichController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> TaoMoi(DatLichKhamViewModel viewModel) // Xử lý đặt lịch
+    public async Task<IActionResult> TaoMoi(DatLichKhamViewModel viewModel)
     {
-        // Tải lại dropdowns khi ModelState invalid để hiển thị lại form
         if (viewModel.DanhSachBacSi == null || !viewModel.DanhSachBacSi.Any())
         {
             viewModel.DanhSachBacSi = await _context.BacSis.OrderBy(bs => bs.TenBacSi).Select(bs => new SelectListItem { Value = bs.MaBacSi.ToString(), Text = bs.TenBacSi }).ToListAsync();
@@ -66,7 +62,6 @@ public class DatLichController : Controller
             var lichTrinhChon = await _context.LichTrinhs
                                             .FirstOrDefaultAsync(lt => lt.MaLichTrinh == viewModel.MaLichTrinhChon);
 
-            // Kiểm tra các điều kiện hợp lệ
             if (lichTrinhChon == null)
             {
                 ModelState.AddModelError("MaLichTrinhChon", "Khung giờ đã chọn không hợp lệ. Vui lòng tải lại và chọn lại.");
@@ -81,7 +76,6 @@ public class DatLichController : Controller
                 ModelState.AddModelError("NgayKham", "Ngày khám không được chọn trong quá khứ.");
             }
 
-            // Nếu hợp lệ, tiến hành lưu
             if (ModelState.IsValid)
             {
                 var lichHen = new LichHen
@@ -91,27 +85,25 @@ public class DatLichController : Controller
                     SoDienThoaiBenhNhan = viewModel.SoDienThoai ?? string.Empty,
                     EmailBenhNhan = viewModel.Email,
                     ThoiGianDatHen = DateTime.Now,
-                    TrangThai = "MoiDat", // Trạng thái ban đầu
+                    TrangThai = "MoiDat",
                     GhiChu = viewModel.GhiChu,
                 };
 
                 _context.LichHens.Add(lichHen);
 
-                // Cập nhật (giảm) số lượng slot trống
                 if (lichTrinhChon.SoLuongSlotTrong.HasValue)
                 {
                     lichTrinhChon.SoLuongSlotTrong -= 1;
                     _context.LichTrinhs.Update(lichTrinhChon);
                 }
 
-                await _context.SaveChangesAsync(); // Lưu thay đổi vào DB
+                await _context.SaveChangesAsync();
 
                 TempData["SuccessMessage"] = $"Đặt lịch thành công!";
                 return RedirectToAction("XacNhanDatLich", new { id = lichHen.MaLichHen });
             }
         }
 
-        // Nếu ModelState không hợp lệ, tải lại khung giờ nếu có thể
         if (viewModel.MaBacSiChon > 0 && viewModel.MaDichVuChon > 0 && viewModel.NgayKham != default(DateTime))
         {
             var slotsResult = await GetAvailableSlots(
@@ -128,20 +120,19 @@ public class DatLichController : Controller
                 viewModel.DanhSachKhungGio = new List<SelectListItem> { new SelectListItem { Value = "", Text = "-- Không có khung giờ trống --" } };
             }
         }
-        else if (viewModel.DanhSachKhungGio == null || !viewModel.DanhSachKhungGio.Any()) // Đảm bảo dropdown khung giờ không bị rỗng
+        else if (viewModel.DanhSachKhungGio == null || !viewModel.DanhSachKhungGio.Any())
         {
             viewModel.DanhSachKhungGio = new List<SelectListItem> { new SelectListItem { Value = "", Text = "-- Vui lòng chọn ngày, bác sĩ, dịch vụ --" } };
         }
 
-        return View(viewModel); // Hiển thị lại form với lỗi
+        return View(viewModel);
     }
 
-    // GET: Hiển thị trang xác nhận đặt lịch
+
     public async Task<IActionResult> XacNhanDatLich(int? id)
     {
         if (id == null)
         {
-            // Xử lý trường hợp không có ID
             if (TempData["SuccessMessage"] != null)
             {
                 ViewBag.SuccessMessage = TempData["SuccessMessage"];
@@ -150,7 +141,6 @@ public class DatLichController : Controller
             return NotFound();
         }
 
-        // Lấy thông tin lịch hẹn và các thông tin liên quan
         var lichHen = await _context.LichHens
                                 .Include(lh => lh.LichTrinh)
                                     .ThenInclude(lt => lt.BacSi)
@@ -162,10 +152,9 @@ public class DatLichController : Controller
 
         ViewBag.SuccessMessage = TempData["SuccessMessage"] ?? "Chi tiết lịch hẹn:";
 
-        return View(lichHen); // Truyền LichHen cho View
+        return View(lichHen);
     }
 
-    // API: Lấy danh sách khung giờ trống
     [HttpGet]
     public async Task<IActionResult> GetAvailableSlots(int maBacSi, int maDichVu, string ngayKham)
     {
@@ -182,25 +171,23 @@ public class DatLichController : Controller
         DayOfWeek dayOfWeekSelected = selectedDate.DayOfWeek;
         string thuTrongTuanDbFormat = ConvertDayOfWeekToDbFormat(dayOfWeekSelected);
 
-        // Truy vấn các khung giờ phù hợp
         var slots = await _context.LichTrinhs
             .Where(lt => lt.MaBacSi == maBacSi &&
                          lt.MaDichVu == maDichVu &&
                          lt.ThoiGianBatDau.Date == selectedDate.Date &&
-                         lt.ThoiGianBatDau.Hour >= 18 && lt.ThoiGianBatDau.Hour < 21 && // Lọc khung giờ tối 18h-21h
-                         lt.SoLuongSlotTrong.HasValue && lt.SoLuongSlotTrong > 0 && // Còn slot trống
+                         lt.ThoiGianBatDau.Hour >= 18 && lt.ThoiGianBatDau.Hour < 21 &&
+                         lt.SoLuongSlotTrong.HasValue && lt.SoLuongSlotTrong > 0 &&
                          lt.ThuTrongTuan == thuTrongTuanDbFormat)
             .OrderBy(lt => lt.ThoiGianBatDau)
             .Select(lt => new SelectListItem
             {
                 Value = lt.MaLichTrinh.ToString(),
-                Text = $"{lt.ThoiGianBatDau:HH:mm} - {lt.ThoiGianKetThuc:HH:mm}" // Định dạng giờ
+                Text = $"{lt.ThoiGianBatDau:HH:mm} - {lt.ThoiGianKetThuc:HH:mm}"
             }).ToListAsync();
 
         return Json(slots ?? new List<SelectListItem>());
     }
 
-    // API: Lấy giá và tên dịch vụ
     [HttpGet]
     public async Task<IActionResult> GetServicePrice(int maDichVu)
     {
@@ -213,10 +200,8 @@ public class DatLichController : Controller
         return Json(null);
     }
 
-    // Hàm tiện ích: Chuyển đổi DayOfWeek sang định dạng chuỗi trong DB
     private string ConvertDayOfWeekToDbFormat(DayOfWeek dayOfWeek)
     {
-        // <<< Cần đảm bảo định dạng trả về khớp với dữ liệu cột LichTrinhs.ThuTrongTuan
         switch (dayOfWeek)
         {
             case DayOfWeek.Monday: return "Thứ Hai";
@@ -230,7 +215,6 @@ public class DatLichController : Controller
         }
     }
 
-    // Action kiểm tra kết nối DB (Hữu ích khi phát triển)
     public IActionResult KiemTraKetNoiTrucTiep()
     {
         string connectionString = _configuration.GetConnectionString("DefaultConnection");
@@ -250,6 +234,6 @@ public class DatLichController : Controller
             catch (Exception ex) { message = $"LỖI KẾT NỐI: {ex.Message}"; }
         }
         ViewBag.Message = message;
-        return View("ThongBaoKetNoi"); // Trả về View tên ThongBaoKetNoi.cshtml
+        return View("ThongBaoKetNoi");
     }
 }

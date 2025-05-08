@@ -11,14 +11,14 @@ namespace HEALTHCARE.Models
         public int MaLichTrinh { get; set; }
 
         [Required]
-        public int MaBacSi { get; set; } // Khóa ngoại
+        public int MaBacSi { get; set; } 
         [ForeignKey("MaBacSi")]
-        public virtual BacSi? BacSi { get; set; } // Navigation property
+        public virtual BacSi? BacSi { get; set; } 
 
         [Required]
-        public int MaDichVu { get; set; } // Khóa ngoại
+        public int MaDichVu { get; set; } 
         [ForeignKey("MaDichVu")]
-        public virtual DichVu? DichVu { get; set; } // Navigation property
+        public virtual DichVu? DichVu { get; set; } 
 
         [Required]
         public DateTime ThoiGianBatDau { get; set; }
@@ -26,7 +26,7 @@ namespace HEALTHCARE.Models
         [Required]
         public DateTime ThoiGianKetThuc { get; set; }
 
-        public int? SoLuongSlotTrong { get; set; } // Nullable int
+        public int? SoLuongSlotTrong { get; set; } 
 
         [StringLength(10)]
         public string? ThuTrongTuan { get; set; }
@@ -34,7 +34,6 @@ namespace HEALTHCARE.Models
         public DateTime ThoiGianTao { get; set; }
         public DateTime ThoiGianCapNhat { get; set; }
 
-        // Navigation property
         public virtual ICollection<LichHen> LichHens { get; set; } = new List<LichHen>();
     }
 }

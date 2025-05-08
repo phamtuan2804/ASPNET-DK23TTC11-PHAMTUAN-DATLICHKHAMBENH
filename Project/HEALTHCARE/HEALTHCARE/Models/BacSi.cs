@@ -26,7 +26,6 @@ namespace HEALTHCARE.Models
         public DateTime ThoiGianTao { get; set; }
         public DateTime ThoiGianCapNhat { get; set; }
 
-        // Navigation property
         public virtual ICollection<LichTrinh> LichTrinhs { get; set; } = new List<LichTrinh>();
     }
 }

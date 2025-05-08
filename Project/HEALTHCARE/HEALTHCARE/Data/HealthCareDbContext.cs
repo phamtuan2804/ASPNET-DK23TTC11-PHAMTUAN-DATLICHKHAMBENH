@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using HEALTHCARE.Models; // Namespace cho Entity Models
+using HEALTHCARE.Models;
 
-namespace HEALTHCARE.Data // Namespace cho DbContext
+namespace HEALTHCARE.Data
 {
     public class HealthCareDbContext : DbContext
     {
@@ -19,20 +19,17 @@ namespace HEALTHCARE.Data // Namespace cho DbContext
         {
             base.OnModelCreating(modelBuilder);
 
-            // Ánh xạ Entity tới tên bảng cụ thể.
             modelBuilder.Entity<BacSi>().ToTable("BacSi");
             modelBuilder.Entity<DichVu>().ToTable("DichVu");
             modelBuilder.Entity<LichTrinh>().ToTable("LichTrinh");
             modelBuilder.Entity<LichHen>().ToTable("LichHen");
             modelBuilder.Entity<NguoiDung>().ToTable("NguoiDung");
 
-            // Cấu hình thuộc tính cụ thể (ví dụ).
             modelBuilder.Entity<DichVu>(entity =>
             {
                 entity.Property(d => d.Gia).HasColumnType("decimal(10, 2)");
             });
 
-            // Thêm các cấu hình Fluent API khác tại đây nếu cần.
         }
     }
 }

@@ -18,12 +18,11 @@ namespace HEALTHCARE.Models
         public string? MoTa { get; set; }
 
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal? Gia { get; set; } // Nullable decimal
+        public decimal? Gia { get; set; }
 
         public DateTime ThoiGianTao { get; set; }
         public DateTime ThoiGianCapNhat { get; set; }
 
-        // Navigation property
         public virtual ICollection<LichTrinh> LichTrinhs { get; set; } = new List<LichTrinh>();
     }
 }
