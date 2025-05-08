@@ -70,7 +70,7 @@ img {
     transition: color 0.3s ease;
 }
 
-    .main-nav a::after {
+    .main-nav a::after { /* Hi?u ?ng g?ch chân menu */
         content: '';
         position: absolute;
         width: 0;
@@ -187,8 +187,8 @@ img {
         color: #555;
     }
 
-        .benefits-list li::before { /* Icon ??u dòng */
-            content: '?'; /* ??i thành d?u check */
+        .benefits-list li::before { /* Icon ??u dòng l?i ích */
+            content: '?'; /* Thay b?ng d?u check */
             position: absolute;
             left: 0;
             top: 0;
@@ -204,7 +204,7 @@ img {
             font-weight: bold;
         }
 
-.hero-images { /* Grid ?nh */
+.hero-images { /* Grid ?nh banner */
     flex: 1 1 45%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -239,6 +239,7 @@ img {
     grid-area: img-4;
 }
 
+
 /* --- Form ??t L?ch --- */
 .registration-form-section {
     background-color: #8E44AD;
@@ -268,7 +269,7 @@ img {
         flex: 1;
         display: flex;
         flex-direction: column;
-        margin-bottom: 15px; /* Thêm l?i margin n?u c?n kho?ng cách khi x?p d?c */
+        margin-bottom: 15px;
     }
 
     .registration-form label.control-label { /* Nhãn input */
@@ -287,7 +288,6 @@ img {
         background-color: #fff;
         color: #333;
         width: 100%;
-        box-sizing: border-box; /* ?ã có ? reset (*) */
     }
 
         .registration-form .form-input::placeholder {
@@ -323,15 +323,14 @@ img {
         padding: 12px 30px;
         font-size: 1.1em;
         box-shadow: 0 2px 5px rgba(241, 196, 15, 0.4);
-        /* Thu?c tính khác k? th?a t? .cta-button */
+        /* K? th?a ki?u t? .cta-button */
     }
 
         .registration-form .form-submit-button:hover {
             background-color: #D4AC0D;
         }
 
-/* Ki?u thông báo thành công (TempData) */
-.alert.alert-success {
+.alert.alert-success { /* Ki?u thông báo thành công */
     background-color: #d4edda;
     color: #155724;
     padding: 10px;
@@ -467,12 +466,11 @@ img {
     .registration-form .form-row {
         flex-direction: column;
         gap: 0;
-        margin-bottom: 0; /* Reset margin khi group x?p d?c */
+        margin-bottom: 0;
     }
 
     .registration-form .form-group {
-        /* ?ã có margin-bottom: 15px; gi? nguyên ho?c ?i?u ch?nh n?u c?n */
-        margin-bottom: 20px; /* Gi? nh? c? n?u ?n */
+        margin-bottom: 20px;
     }
 
     .registration-form .form-submit {

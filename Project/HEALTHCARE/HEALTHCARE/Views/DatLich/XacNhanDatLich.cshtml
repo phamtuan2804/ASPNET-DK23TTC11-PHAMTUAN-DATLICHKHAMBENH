@@ -1,0 +1,60 @@
+﻿@model LichHen // Model là LichHen (Entity)
+@{
+    ViewData["Title"] = "Xác Nhận Đặt Lịch Thành Công";
+}
+
+<section class="registration-form-section" style="background-color: #e9f5e9;">
+    <div class="container" style="color: #333;">
+
+        <h2>@ViewBag.SuccessMessage</h2>
+        <hr />
+
+        @if (Model != null)
+        {
+            <div class="confirmation-details" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3 style="color: #6a1b9a; margin-bottom:15px;">3. Thông tin lịch hẹn</h3>
+
+                @* Không còn STT trong mô hình này *@
+                @*<div style="margin-bottom: 10px;">...</div>*@
+
+                <div style="margin-bottom: 10px;">
+                    <strong>Giờ khám dự kiến:</strong>
+                    @* Lấy thời gian từ LichTrinh liên kết *@
+                    <span style="font-weight: bold; font-size: 1.2em;">@Model.LichTrinh?.ThoiGianBatDau.ToString("HH:mm dd/MM/yyyy")</span>
+                </div>
+                <hr>
+                <h4 style="margin-top: 15px;">Thông tin bệnh nhân:</h4>
+                <p><strong>Họ tên:</strong> @Model.TenBenhNhan</p>
+                <p><strong>Số điện thoại:</strong> @Model.SoDienThoaiBenhNhan</p>
+                <p><strong>Email:</strong> @(Model.EmailBenhNhan ?? "N/A")</p>
+                @if (!string.IsNullOrWhiteSpace(Model.GhiChu))
+                {
+                    <p><strong>Ghi chú:</strong> @Model.GhiChu</p>
+                }
+                <hr>
+                <h4 style="margin-top: 15px;">Thông tin dịch vụ:</h4>
+                <p><strong>Dịch vụ khám:</strong> @Model.LichTrinh?.DichVu?.TenDichVu</p>
+                <p><strong>Bác sĩ khám:</strong> @Model.LichTrinh?.BacSi?.TenBacSi</p>
+                <p><strong>Giá dịch vụ:</strong> @(Model.LichTrinh?.DichVu?.Gia.HasValue == true ? Model.LichTrinh.DichVu.Gia.Value.ToString("N0") + " VNĐ" : "Liên hệ")</p>
+
+            </div>
+
+            <div style="margin-top: 20px; text-align:center;">
+                <p><i>Lưu ý: Vui lòng đến trước giờ hẹn dự kiến khoảng 10-15 phút để làm thủ tục.</i></p>
+                <a asp-action="TaoMoi" asp-controller="DatLich" class="cta-button form-submit-button" style="margin-right: 10px;">Đặt Lịch Khác</a>
+                <a asp-action="Index" asp-controller="Home" class="cta-button" style="background-color:#777;">Về Trang Chủ</a>
+            </div>
+        }
+        else
+        {
+            <p>Không tìm thấy thông tin lịch hẹn.</p>
+            @* Hiển thị thông báo chung nếu chỉ có TempData *@
+            if (ViewBag.SuccessMessage != null && ViewBag.SuccessMessage != "Chi tiết lịch hẹn:")
+            {
+                <p>@ViewBag.SuccessMessage</p>
+            }
+            <a asp-action="TaoMoi" asp-controller="DatLich" class="cta-button">Quay lại đặt lịch</a>
+        }
+
+    </div>
+</section>

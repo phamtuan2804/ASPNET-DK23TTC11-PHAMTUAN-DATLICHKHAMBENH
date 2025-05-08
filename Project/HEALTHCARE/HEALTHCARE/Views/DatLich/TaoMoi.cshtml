@@ -17,7 +17,7 @@
     <header class="header">
         <div class="container">
             <a href="@Url.Action("Index", "Home")" class="logo">
-                <img src="https://placehold.co/150x50/8A2BE2/white?text=HealthCare+Logo" alt="Logo HealthCare">
+                <img src="~/images/LogoHealthCare.jpg" alt="Logo HealthCare">
             </a>
             <nav class="main-nav">
                 <ul>
@@ -64,14 +64,12 @@
 
                 @if (TempData["SuccessMessage"] != null)
                 {
-                    <div class="alert alert-success">
-                        @TempData["SuccessMessage"]
-                    </div>
+                    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
                 }
 
                 <form asp-controller="DatLich" asp-action="TaoMoi" method="post" class="registration-form">
                     @Html.AntiForgeryToken()
-                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3" style="background-color: #f8d7da; border-color: #f5c6cb; padding: .75rem 1.25rem; border: 1px solid transparent; border-radius: .25rem;"></div>
 
                     <h4 class="form-section-title">1. Thông tin cá nhân</h4>
                     <div class="form-row">
@@ -131,7 +129,7 @@
                     <div class="form-row">
                         <div class="form-group" style="width:100%;">
                             <label asp-for="GhiChu" class="control-label"></label>
-                            <textarea asp-for="GhiChu" class="form-input" rows="3" placeholder="Ghi chú thêm nếu có (ví dụ: triệu chứng cụ thể, yêu cầu khác...)"></textarea>
+                            <textarea asp-for="GhiChu" class="form-input" rows="3" placeholder="Ghi chú thêm..."></textarea>
                             <span asp-validation-for="GhiChu" class="text-danger"></span>
                         </div>
                     </div>
@@ -152,14 +150,16 @@
         <section id="about" class="about-section">
             <div class="container">
                 <h2>Giới thiệu về chúng tôi</h2>
-                <p>Nội dung phần giới thiệu...</p>
+                <p>
+                    Tập đoàn Y Khoa HealthCare tự hào là đơn vị tiên phong trong lĩnh vực chăm sóc sức khỏe tại Việt Nam. Với sứ mệnh mang đến dịch vụ y tế chất lượng cao theo tiêu chuẩn quốc tế, chúng tôi không ngừng đầu tư vào hệ thống cơ sở vật chất hiện đại và công nghệ tiên tiến. Đội ngũ chuyên gia, bác sĩ của HealthCare là những người giàu kinh nghiệm, tận tâm và luôn đặt sức khỏe cũng như sự hài lòng của khách hàng lên hàng đầu. Chúng tôi cung cấp đa dạng các dịch vụ khám chữa bệnh, tầm soát sức khỏe và tư vấn chuyên sâu, cam kết đồng hành cùng cộng đồng trong hành trình bảo vệ và nâng cao sức khỏe.
+                </p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; @DateTime.Now.Year. Tên công ty của bạn. Bảo lưu mọi quyền.</p>
+            <p>&copy; @DateTime.Now.Year. Tập đoàn Y Khoa HealthCare.</p>
         </div>
     </footer>
 
@@ -187,11 +187,7 @@
                         $.ajax({
                             url: '@Url.Action("GetAvailableSlots", "DatLich")',
                             type: 'GET',
-                            data: {
-                                maBacSi: maBacSi,
-                                maDichVu: maDichVu,
-                                ngayKham: ngayKham
-                            },
+                            data: { maBacSi: maBacSi, maDichVu: maDichVu, ngayKham: ngayKham },
                             success: function (data) {
                                 ddlKhungGio.empty();
                                 if (data && data.length > 0) {

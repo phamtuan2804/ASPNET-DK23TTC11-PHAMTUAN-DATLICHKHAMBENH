@@ -66,6 +66,7 @@ wwwroot\images\kham-suc-khoe-1.jpg
 wwwroot\images\kham-suc-khoe-2.jpg
 wwwroot\images\kham-suc-khoe-3.jpg
 wwwroot\images\kham-suc-khoe-4.jpg
+wwwroot\images\LogoHealthCare.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

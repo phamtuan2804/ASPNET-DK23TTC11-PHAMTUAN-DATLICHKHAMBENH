@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace HEALTHCARE.Models // Namespace cho ViewModel
+namespace HEALTHCARE.Models
 {
     public class DatLichKhamViewModel
     {
@@ -38,8 +38,8 @@ namespace HEALTHCARE.Models // Namespace cho ViewModel
 
         [Display(Name = "Khung giờ khám (18h00 - 21h00)")]
         [Required(ErrorMessage = "Vui lòng chọn khung giờ.")]
-        public int MaLichTrinhChon { get; set; }
-        public IEnumerable<SelectListItem>? DanhSachKhungGio { get; set; }
+        public int MaLichTrinhChon { get; set; } // ID của bản ghi LichTrinh
+        public IEnumerable<SelectListItem>? DanhSachKhungGio { get; set; } // Danh sách slot trống
 
         [Display(Name = "Giá dịch vụ (dự kiến)")]
         [DataType(DataType.Currency)]
@@ -49,7 +49,7 @@ namespace HEALTHCARE.Models // Namespace cho ViewModel
         [DataType(DataType.MultilineText)]
         public string? GhiChu { get; set; }
 
-        // Constructor khởi tạo các giá trị mặc định và danh sách.
+        // Constructor khởi tạo.
         public DatLichKhamViewModel()
         {
             TenBenhNhan = string.Empty;
