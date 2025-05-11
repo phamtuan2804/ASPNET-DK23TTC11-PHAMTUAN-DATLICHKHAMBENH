@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using HEALTHCARE.Models; // C?n thi?t n?u ErrorViewModel n?m ? ?ây
+using HEALTHCARE.Models; 
 using Microsoft.AspNetCore.Mvc;
 
 namespace HEALTHCARE.Controllers

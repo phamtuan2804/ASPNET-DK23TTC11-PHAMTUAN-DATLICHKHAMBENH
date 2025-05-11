@@ -14,12 +14,9 @@
             <div class="confirmation-details" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
                 <h3 style="color: #6a1b9a; margin-bottom:15px;">3. Thông tin lịch hẹn</h3>
 
-                @* Không còn STT trong mô hình này *@
-                @*<div style="margin-bottom: 10px;">...</div>*@
 
                 <div style="margin-bottom: 10px;">
                     <strong>Giờ khám dự kiến:</strong>
-                    @* Lấy thời gian từ LichTrinh liên kết *@
                     <span style="font-weight: bold; font-size: 1.2em;">@Model.LichTrinh?.ThoiGianBatDau.ToString("HH:mm dd/MM/yyyy")</span>
                 </div>
                 <hr>
@@ -48,7 +45,6 @@
         else
         {
             <p>Không tìm thấy thông tin lịch hẹn.</p>
-            @* Hiển thị thông báo chung nếu chỉ có TempData *@
             if (ViewBag.SuccessMessage != null && ViewBag.SuccessMessage != "Chi tiết lịch hẹn:")
             {
                 <p>@ViewBag.SuccessMessage</p>

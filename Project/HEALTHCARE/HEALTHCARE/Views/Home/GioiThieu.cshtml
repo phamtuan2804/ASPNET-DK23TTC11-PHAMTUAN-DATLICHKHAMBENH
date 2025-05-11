@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Giới Thiệu - Tập Đoàn Y Khoa HealthCare";
+    // Layout = "_YourMainLayout"; // Nếu bạn dùng layout chung, bỏ comment dòng này
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css"> @* Link CSS chính *@
+    @* Nếu có CSS riêng cho trang giới thiệu, link ở đây *@
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="@Url.Action("TaoMoi", "DatLich")" class="logo">
+                @* Link về trang chủ *@
+                <img src="~/images/LogoHealthCare.jpg" alt="Logo HealthCare"> 
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="@Url.Action("TaoMoi", "DatLich")">Trang chủ</a></li> 
+                    <li><a href="@Url.Action("GioiThieu", "Home")" class="active">Giới thiệu</a></li> 
+                    <li><a href="@Url.Action("TaoMoi", "DatLich")#contact">Liên hệ</a></li> 
+                </ul>
+            </nav>
+            <button class="cta-button header-cta" onclick="location.href='@Url.Action("TaoMoi", "DatLich")#contact'">Liên hệ tư vấn ngay</button>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section" style="padding-top: 40px; padding-bottom: 40px;">
+            <div class="container">
+                <h2>Giới thiệu về chúng tôi</h2>
+                <p style="text-align: justify; line-height: 1.8;">
+                    Tập đoàn Y Khoa HealthCare tự hào là đơn vị tiên phong trong lĩnh vực chăm sóc sức khỏe tại Việt Nam. Với sứ mệnh mang đến dịch vụ y tế chất lượng cao theo tiêu chuẩn quốc tế, chúng tôi không ngừng đầu tư vào hệ thống cơ sở vật chất hiện đại và công nghệ tiên tiến.
+                </p>
+                <p style="text-align: justify; line-height: 1.8;">
+                    Đội ngũ chuyên gia, bác sĩ của HealthCare là những người giàu kinh nghiệm, tận tâm và luôn đặt sức khỏe cũng như sự hài lòng của khách hàng lên hàng đầu. Chúng tôi hiểu rằng mỗi cá nhân là một thực thể riêng biệt, vì vậy mọi quy trình thăm khám và điều trị đều được cá nhân hóa để mang lại hiệu quả tối ưu.
+                </p>
+                <p style="text-align: justify; line-height: 1.8;">
+                    HealthCare cung cấp đa dạng các dịch vụ từ khám tổng quát, tầm soát bệnh lý chuyên sâu, đến các gói chăm sóc sức khỏe cho cá nhân và doanh nghiệp. Chúng tôi cam kết đồng hành cùng cộng đồng trong hành trình bảo vệ và nâng cao chất lượng cuộc sống, xây dựng một tương lai khỏe mạnh hơn.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year. Tập đoàn Y Khoa HealthCare. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

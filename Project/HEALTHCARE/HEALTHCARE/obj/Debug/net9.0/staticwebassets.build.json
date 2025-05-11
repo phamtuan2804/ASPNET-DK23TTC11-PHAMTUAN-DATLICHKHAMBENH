@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5sU4HPc6sq2oinkryzMVSZhjBfGEuxqI2jX2la9yK54=",
+  "Hash": "9pEEGGULuME8/7nhiqD0RzjGkvxH6kElcQj/gEuD8eo=",
   "Source": "HEALTHCARE",
   "BasePath": "_content/HEALTHCARE",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-aybogr8ck1.gz",
+      "Identity": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-bw5ue1vwja.gz",
       "SourceId": "HEALTHCARE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/HEALTHCARE",
-      "RelativePath": "css/style#[.{fingerprint=aybogr8ck1}]?.css.gz",
+      "RelativePath": "css/style#[.{fingerprint=bw5ue1vwja}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\css\\style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cmn91ykjk7",
-      "Integrity": "1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4=",
+      "Fingerprint": "in685tcloi",
+      "Integrity": "UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\css\\style.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "aybogr8ck1",
-      "Integrity": "gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g=",
+      "Fingerprint": "bw5ue1vwja",
+      "Integrity": "pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -2833,13 +2833,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/style.aybogr8ck1.css",
-      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-aybogr8ck1.gz",
+      "Route": "css/style.bw5ue1vwja.css",
+      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-bw5ue1vwja.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000352609309"
+          "Quality": "0.000402576490"
         }
       ],
       "ResponseHeaders": [
@@ -2849,15 +2849,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2835"
+          "Value": "2483"
         },
         {
           "Name": "ETag",
-          "Value": "\"1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4=\""
+          "Value": "\"UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,13 +2877,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g=\""
+          "Value": "W/\"pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "aybogr8ck1"
+          "Value": "bw5ue1vwja"
         },
         {
           "Name": "label",
@@ -2891,12 +2891,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g="
+          "Value": "sha256-pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is="
         }
       ]
     },
     {
-      "Route": "css/style.aybogr8ck1.css",
+      "Route": "css/style.bw5ue1vwja.css",
       "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2906,7 +2906,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11089"
+          "Value": "10364"
         },
         {
           "Name": "Content-Type",
@@ -2914,11 +2914,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g=\""
+          "Value": "\"pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2928,7 +2928,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "aybogr8ck1"
+          "Value": "bw5ue1vwja"
         },
         {
           "Name": "label",
@@ -2936,13 +2936,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g="
+          "Value": "sha256-pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is="
         }
       ]
     },
     {
-      "Route": "css/style.aybogr8ck1.css.gz",
-      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-aybogr8ck1.gz",
+      "Route": "css/style.bw5ue1vwja.css.gz",
+      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-bw5ue1vwja.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2951,7 +2951,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2835"
+          "Value": "2483"
         },
         {
           "Name": "Content-Type",
@@ -2959,11 +2959,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4=\""
+          "Value": "\"UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2981,7 +2981,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "aybogr8ck1"
+          "Value": "bw5ue1vwja"
         },
         {
           "Name": "label",
@@ -2989,18 +2989,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4="
+          "Value": "sha256-UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA="
         }
       ]
     },
     {
       "Route": "css/style.css",
-      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-aybogr8ck1.gz",
+      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-bw5ue1vwja.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000352609309"
+          "Quality": "0.000402576490"
         }
       ],
       "ResponseHeaders": [
@@ -3010,15 +3010,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2835"
+          "Value": "2483"
         },
         {
           "Name": "ETag",
-          "Value": "\"1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4=\""
+          "Value": "\"UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3038,13 +3038,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g=\""
+          "Value": "W/\"pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g="
+          "Value": "sha256-pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is="
         }
       ]
     },
@@ -3059,7 +3059,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11089"
+          "Value": "10364"
         },
         {
           "Name": "Content-Type",
@@ -3067,11 +3067,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g=\""
+          "Value": "\"pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3081,13 +3081,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gi6WO4cMoRl7A8un7dHXcEpshQzt8sehz8bS/n6RI4g="
+          "Value": "sha256-pSTjoRZdRjXM1M/4sbWuAHxVzTPR9WT3JGcY/Qyu9is="
         }
       ]
     },
     {
       "Route": "css/style.css.gz",
-      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-aybogr8ck1.gz",
+      "AssetFile": "E:\\03 TVU_ONSCHOOL\\TVU_ONSCHOOL\\ASP.NET\\Project\\HEALTHCARE\\HEALTHCARE\\obj\\Debug\\net9.0\\compressed\\5e2wlsnc3c-bw5ue1vwja.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3096,7 +3096,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2835"
+          "Value": "2483"
         },
         {
           "Name": "Content-Type",
@@ -3104,11 +3104,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4=\""
+          "Value": "\"UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 07:18:09 GMT"
+          "Value": "Sun, 11 May 2025 12:10:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3126,7 +3126,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1EhGoORhakooshm7qZkUP/HEfw+pfvADm31uwmWFMQ4="
+          "Value": "sha256-UnPl0DZCloS0nDGk3Q3nPLJm8dMIYHmActE+aOIDVTA="
         }
       ]
     },
