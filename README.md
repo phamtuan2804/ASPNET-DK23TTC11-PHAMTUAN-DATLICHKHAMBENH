@@ -15,4 +15,4 @@ Bước 2: Restore lại file database có tên create_database_healthcare.bak n
 
 Bước 3: Chạy project trên Visual Studio 2022
 
-Bước 4: Bấm F5 hoặc nút Run trên phần mềm
+Bước 4: Bấm F5 hoặc nút Run trên phần mềm để chạy
